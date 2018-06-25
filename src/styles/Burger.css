@@ -1,0 +1,22 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: transparent;
+  border: none; /* <~~Because it is a button, it had a border */
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burger-line {
+  width: 1.25rem;
+  height: 2px;
+  background: var(--clr-txt);
+}

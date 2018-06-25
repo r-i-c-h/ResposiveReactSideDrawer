@@ -1,13 +1,13 @@
 import React from 'react';
-import Burger from './Burger';
+import Burger from '../SideDrawer/Burger';
 import '../../styles/Menu.css';
 
-const Menu = ({didSpin}) => (
+const Menu = ({isDrawerOpen}) => (
   <header className="menu">
     <nav className="menu__nav">
-      {/* <Burger didSpin={didSpin}/> */}
+      <Burger />
       <div className="menu__logo"><a href="/">&gt;LOGO&lt;</a></div>
-      <div className="menu__emptyPushApartDiv" />
+      <div className="menu__emptyPushApartDiv"/>
       <div className="menu__links">
         <ul>
           <li><a href="/">Page Here</a></li>
