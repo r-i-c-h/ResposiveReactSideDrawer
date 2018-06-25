@@ -5,7 +5,8 @@ header {
   left: 0;
   width: 100%;
   height: var(--menu-height);
-  box-shadow: 0px 1px rgba(0,0,0,0.5);
+  /* box-shadow: 0px 1px rgba(0,0,0,0.5); */
+  border-bottom: 1px solid black;
 }
 
 .menu__nav {

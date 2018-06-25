@@ -19,13 +19,13 @@ class App extends Component {
   }
   
   render() {
+    const isDrawerOpen = this.state.isDrawerOpen;
     return (
       <div className="App">
-        <Menu isDrawerOpen={this.state.isDrawerOpen} toggleDrawer={this.drawerToggleClickHandler} />
+        <Menu isDrawerOpen={isDrawerOpen} toggleDrawer={this.drawerToggleClickHandler} />
         
-        <SideDrawer show={this.state.isDrawerOpen}/>;
-        { this.state.isDrawerOpen && <SiteCover clickAction={this.clearOverlays} /> }
-        
+        <SideDrawer show={isDrawerOpen}/>
+        <SiteCover show={isDrawerOpen} clickAction={this.clearOverlays} />
         
         <main>
           <Primary />

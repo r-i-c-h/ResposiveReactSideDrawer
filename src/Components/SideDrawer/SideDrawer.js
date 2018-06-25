@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/SideDrawer.css';
 
 const SideDrawer = props => {
-  let drawerClassList = props.show ? 'side-drawer open' : 'side-drawer';
+  const drawerClassList = props.show ? 'side-drawer open' : 'side-drawer';
   
   return (
     <nav className={drawerClassList}>

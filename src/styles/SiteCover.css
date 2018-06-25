@@ -1,10 +1,17 @@
 .site-cover {
+  z-index: 100;
   top:0;/*  forces top-bar to be covered too*/
   left:0;
+  margin-top: var(--menu-height);
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 100;
-  margin-top: var(--menu-height);
+  
+  background: black;
+  opacity: 0;
+  transition: opacity .2s cubic-bezier(.41,.71,.5,1);
+}
+
+.site-cover.open {
+  opacity: .7;
 }
