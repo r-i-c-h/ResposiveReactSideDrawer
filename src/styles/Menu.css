@@ -1,0 +1,70 @@
+header {
+  position: fixed;
+  background-color: var(--clr-dark);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--menu-height);
+}
+
+.menu__nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.menu__emptyPushApartDiv { flex: 1; }
+.menu__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu__links a {
+  padding: 0 .5rem;
+  color: var(--clr-txt);
+  text-decoration: none;
+}
+
+.menu__links a:hover {
+  color: var(--clr-acc-light);
+}
+
+.menu__links a:active {
+  color: var(--clr-txt);
+}
+
+.menu__logo a {
+  color: var(--clr-txt);
+  text-decoration: none;
+  font-size: 1.25rem;
+  /* display: inline-block; */
+}
+
+/* .burger {
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 3px;
+}
+
+.burger-line {
+  width: 1rem;
+  margin: 3px;
+  border: solid 2px var(--clr-txt);
+}
+ */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
