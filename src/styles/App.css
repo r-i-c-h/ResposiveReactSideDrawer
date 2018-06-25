@@ -1,5 +1,5 @@
 main { 
-  margin-top: var(--menu-height);
+  margin-top: calc( var(--menu-height) + 1rem);
   margin-left: 1rem;
 }
 

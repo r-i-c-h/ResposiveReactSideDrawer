@@ -7,6 +7,10 @@
   --menu-height: 2.75rem;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -15,4 +19,3 @@ body {
   background-color: var(--clr-background);
   color: var(--clr-txt);
 }
-
